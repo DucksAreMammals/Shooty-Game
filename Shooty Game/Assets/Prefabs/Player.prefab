@@ -130,4 +130,4 @@ MonoBehaviour:
   maxPos: 8.52
   bullet: {fileID: 3846120429321084878, guid: 49a705488ba453249abc0f448ac59301, type: 3}
   timeBetweenBullets: 0.25
-  bulletSpawnYOffset: 0.7
+  bulletSpawnYOffset: 1

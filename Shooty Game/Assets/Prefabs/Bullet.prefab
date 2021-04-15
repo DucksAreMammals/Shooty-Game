@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3610509768771813923}
   - component: {fileID: 4885505152395937923}
   - component: {fileID: 6830652823517344429}
-  - component: {fileID: 8029008856534772140}
+  - component: {fileID: -3013415967133279787}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 15
---- !u!50 &8029008856534772140
+--- !u!50 &-3013415967133279787
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -139,10 +139,10 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
