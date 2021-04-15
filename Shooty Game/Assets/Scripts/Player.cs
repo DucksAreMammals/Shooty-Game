@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
 
   private void shoot() {
     timeOfLastBullet = Time.time;
-    Vector3 bulletPosition = new Vector3(transform.position.x, transform.position.y + bulletSpawnYOffset, 0);
+    Vector3 bulletPosition = new Vector3(transform.position.x, transform.position.y + bulletSpawnYOffset, 1);
     Instantiate(bullet, bulletPosition, Quaternion.identity);
   }
 }
