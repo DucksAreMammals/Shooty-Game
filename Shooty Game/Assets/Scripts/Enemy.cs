@@ -5,7 +5,6 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
   [SerializeField] public float hp = 1f;
-  [SerializeField] public float damage = 1f;
 
   void Update() {
     transform.Translate(0, -5 * Time.deltaTime, 0);
