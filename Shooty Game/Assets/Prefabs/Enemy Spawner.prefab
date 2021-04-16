@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 733939179177710007, guid: 456839c2b592ea2458c51074f0b3a568, type: 3}
-  enemiesPerWave: 10
+  enemiesPerWave: 14
   timeBetweenWaves: 5
   heightOfSpawn: 6
