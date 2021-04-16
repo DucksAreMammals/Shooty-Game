@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
     transform.Translate(0, bulletSpeed * Time.deltaTime, 0);
   }
 
-  void OnTriggerEnter2D(Collider2D other) {
+  void OnCollisionEnter2D(Collision2D other) {
     try {
       Enemy enemy = other.gameObject.GetComponent<Enemy>();
       enemy.Damage(damage);
