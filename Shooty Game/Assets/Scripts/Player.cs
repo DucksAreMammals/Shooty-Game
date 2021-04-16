@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
       shoot();
     }
   }
-
+  
   private bool canShoot() {
     return Time.time - timeOfLastBullet > timeBetweenBullets;
   }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shredder : MonoBehaviour
 {
-  void OnCollisionEnter2D(Collision2D other) {
+  void OnTriggerEnter2D(Collider2D other) {
     Destroy(other.gameObject);
   }
 }
