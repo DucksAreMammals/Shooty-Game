@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-  [SerializeField] Player player;
+  private Player player;
 
   [SerializeField] GameObject heartPrefab;
 
@@ -17,6 +17,10 @@ public class Health : MonoBehaviour
   private List<GameObject> hearts = new List<GameObject>();
 
   private int previousHealth = -1;
+
+  void Start() {
+    player = GameObject.Find("Player").GetComponent<Player>();
+  }
 
   void Update() {
     if (previousHealth != player.hp) {
