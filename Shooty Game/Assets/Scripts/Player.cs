@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-  [SerializeField] public float hp = 2f;
+  [SerializeField] public int startingHealth = 3;
+  public int hp;
 
   [SerializeField] public float speed = 5f;
   [SerializeField] public float minPos = -8.5f;
@@ -15,6 +16,11 @@ public class Player : MonoBehaviour
   [SerializeField] public float bulletSpawnYOffset = -0.3f;
 
   private float timeOfLastBullet = 0f;
+
+  void Start()
+  {
+    hp = startingHealth;
+  }
 
   void Update()
   {
@@ -39,13 +45,13 @@ public class Player : MonoBehaviour
   void OnTriggerEnter2D(Collider2D other) {
     Enemy enemy = other.gameObject.GetComponent<Enemy>();
 
-    float enemyHp = enemy.hp;
+    int enemyHp = enemy.hp;
 
     enemy.Damage(hp);
     Damage(enemyHp);
   }
 
-  public void Damage(float damage) {
+  public void Damage(int damage) {
     hp -= damage;
 
     if (hp <= 0) {

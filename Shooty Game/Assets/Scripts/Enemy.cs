@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-  [SerializeField] public float hp = 1f;
+  [SerializeField] public int hp = 1;
 
   void Update() {
     transform.Translate(0, -5 * Time.deltaTime, 0);
   }
 
-  public void Damage(float damage) {
+  public void Damage(int damage) {
     hp -= damage;
 
     if (hp <= 0) {

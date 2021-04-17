@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
   [SerializeField] public float bulletSpeed = 10f;
-  [SerializeField] public float damage = 1f;
+  [SerializeField] public int damage = 1;
 
   void Update() {
     transform.Translate(0, bulletSpeed * Time.deltaTime, 0);
