@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
   [SerializeField] public int hp = 1;
+  [SerializeField] public int score = 1;
 
   void Update() {
     transform.Translate(0, -5 * Time.deltaTime, 0);
@@ -19,6 +20,8 @@ public class Enemy : MonoBehaviour
   }
 
   private void Die() {
+    GameObject.Find("ScoreCounter").GetComponent<ScoreCounter>().AddPoints(score);
+
     Destroy(gameObject);
   }
 }
