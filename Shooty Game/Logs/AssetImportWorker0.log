@@ -186,3 +186,112 @@ System memory in use after: 82.8 MB.
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2321.
 Total: 2.586423 ms (FindLiveObjects: 0.214337 ms CreateObjectMapping: 0.055589 ms MarkObjects: 2.303045 ms  DeleteObjects: 0.012295 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000602 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.810 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2325.
+Total: 3.304756 ms (FindLiveObjects: 0.147250 ms CreateObjectMapping: 0.058885 ms MarkObjects: 3.081660 ms  DeleteObjects: 0.015457 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 442.123466 seconds.
+  path: Assets/Prefabs/Game Stuff/Enemy Spawner.prefab
+  artifactKey: Guid(81d08b64c4fc6164a925d15ba524d780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Game Stuff/Enemy Spawner.prefab using Guid(81d08b64c4fc6164a925d15ba524d780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f767c550a97944ad755b89b0d92527f') in 0.038876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.968712 seconds.
+  path: Assets/Prefabs/Game Stuff/Enemy Spawner.prefab
+  artifactKey: Guid(81d08b64c4fc6164a925d15ba524d780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Game Stuff/Enemy Spawner.prefab using Guid(81d08b64c4fc6164a925d15ba524d780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6455d319d41498a73cf1b94afeeef698') in 0.003976 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000501 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.878 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2329.
+Total: 3.619818 ms (FindLiveObjects: 0.347628 ms CreateObjectMapping: 0.080278 ms MarkObjects: 3.172734 ms  DeleteObjects: 0.017214 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.006563 seconds.
+  path: Assets/Prefabs/Game Stuff/Enemy Spawner.prefab
+  artifactKey: Guid(81d08b64c4fc6164a925d15ba524d780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Game Stuff/Enemy Spawner.prefab using Guid(81d08b64c4fc6164a925d15ba524d780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd6b5cdee07847d7e6f03215feb4a2ee') in 0.026671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 278.293176 seconds.
+  path: Assets/Prefabs/Game Stuff/Enemy Spawner.prefab
+  artifactKey: Guid(81d08b64c4fc6164a925d15ba524d780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Game Stuff/Enemy Spawner.prefab using Guid(81d08b64c4fc6164a925d15ba524d780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48ad753669d1e6687e051254a2c816d0') in 0.002714 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000593 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.052 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2333.
+Total: 3.739610 ms (FindLiveObjects: 0.251327 ms CreateObjectMapping: 0.072250 ms MarkObjects: 3.391103 ms  DeleteObjects: 0.022172 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 46.3 MB.
+System memory in use after: 46.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2333.
+Total: 3.456614 ms (FindLiveObjects: 0.153356 ms CreateObjectMapping: 0.062552 ms MarkObjects: 3.200684 ms  DeleteObjects: 0.036332 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 46.3 MB.
+System memory in use after: 46.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2333.
+Total: 2.393125 ms (FindLiveObjects: 0.143513 ms CreateObjectMapping: 0.042980 ms MarkObjects: 2.192413 ms  DeleteObjects: 0.012377 ms)
+
