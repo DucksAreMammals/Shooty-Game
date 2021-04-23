@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-  [SerializeField] public int hp = 1;
+  [SerializeField] public int startingHealth = 1;
   [SerializeField] public int score = 1;
   [SerializeField] public float bulletSpawnOffsetY = -0.7f;
 
@@ -12,11 +12,13 @@ public class Enemy : MonoBehaviour
   [SerializeField] public float minTimeBetweenBullets = 0.5f;
   [SerializeField] public float maxTimeBetweenBullets = 2f;
 
-  private float timeOfLastBullet = -100f;
-  [SerializeField] public float timeBetweenBullets;
+  private float timeOfLastBullet = 0f;
+  private float timeBetweenBullets;
+  public int hp;
 
   void Start() {
     timeBetweenBullets = Random.Range(minTimeBetweenBullets, maxTimeBetweenBullets);
+    hp = startingHealth;
   }
 
   void Update() {

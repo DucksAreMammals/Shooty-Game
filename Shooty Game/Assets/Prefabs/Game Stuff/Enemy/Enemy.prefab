@@ -149,6 +149,6 @@ MonoBehaviour:
   score: 1
   bulletSpawnOffsetY: -1
   bullet: {fileID: 1119665370040260282, guid: 350b46fe16e31239897667c31c84e523, type: 3}
-  minTimeBetweenBullets: 0.2
-  maxTimeBetweenBullets: 1
+  minTimeBetweenBullets: 1
+  maxTimeBetweenBullets: 3
   timeBetweenBullets: 0

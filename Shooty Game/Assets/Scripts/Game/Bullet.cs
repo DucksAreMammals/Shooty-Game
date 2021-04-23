@@ -15,7 +15,12 @@ public class Bullet : MonoBehaviour
     try {
       Enemy enemy = other.gameObject.GetComponent<Enemy>();
       enemy.Damage(hp);
-    } catch {}
+    } catch {
+      try {
+        Player player = other.gameObject.GetComponent<Player>();
+        player.Damage(hp);
+      } catch {}
+    }
 
     Destroy(gameObject);
   }
