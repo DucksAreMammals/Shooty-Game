@@ -1,2 +1,2 @@
 # Shooty Game
- A galaga like game.
+My first game I made. Made with Unity.
