@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
   [SerializeField] public float timeBetweenWaves = 5f;
   [SerializeField] public float heightOfSpawn = 7f;
 
-  private float widthOfScreen = 8.9f * 2f - 1.5f;
+  private float widthOfScreen = 8.9f * 2f - 1f;
   private float timeOfLastWave = -100f;
 
   void Update()
