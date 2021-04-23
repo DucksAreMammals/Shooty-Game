@@ -240,6 +240,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 484139445683918780, guid: 9184b9778cfa3b00c9793214ca1d3ccd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 227.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 484139445683918780, guid: 9184b9778cfa3b00c9793214ca1d3ccd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 238.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 484139445683918781, guid: 9184b9778cfa3b00c9793214ca1d3ccd,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 484139445683918781, guid: 9184b9778cfa3b00c9793214ca1d3ccd,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b370baefb9cee2aedb54a6027775aed3,
+        type: 2}
+    - target: {fileID: 484139445683918781, guid: 9184b9778cfa3b00c9793214ca1d3ccd,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 484139445683918781, guid: 9184b9778cfa3b00c9793214ca1d3ccd,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3008252608039657861, guid: b370baefb9cee2aedb54a6027775aed3,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9184b9778cfa3b00c9793214ca1d3ccd, type: 3}
 --- !u!850595691 &372639776
@@ -621,6 +653,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946936514064872365, guid: 81d08b64c4fc6164a925d15ba524d780,
+        type: 3}
+      propertyPath: enemiesPerWave
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946936514064872365, guid: 81d08b64c4fc6164a925d15ba524d780,
+        type: 3}
+      propertyPath: timeBetweenWaves
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8946936514064872366, guid: 81d08b64c4fc6164a925d15ba524d780,
         type: 3}

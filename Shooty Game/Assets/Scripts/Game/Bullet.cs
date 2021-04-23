@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
   [SerializeField] public int hp = 1;
 
   void Update() {
-    transform.Translate(0, bulletSpeed * Time.deltaTime, 0);
+    GetComponent<Rigidbody2D>().velocity = new Vector3(0, bulletSpeed, 0);
   }
 
   void OnTriggerEnter2D(Collider2D other) {
@@ -22,6 +22,8 @@ public class Bullet : MonoBehaviour
       } catch {}
     }
 
-    Destroy(gameObject);
+    if (other.gameObject.tag != "Bullet") {
+      Destroy(gameObject);
+    }
   }
 }

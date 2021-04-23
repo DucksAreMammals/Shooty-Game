@@ -4,30 +4,32 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-  [SerializeField] public int startingHealth = 1;
+  [SerializeField] public int hp = 1;
   [SerializeField] public int score = 1;
   [SerializeField] public float bulletSpawnOffsetY = -0.7f;
+  [SerializeField] public float speed = -3f;
 
   [SerializeField] public GameObject bullet;
   [SerializeField] public float minTimeBetweenBullets = 0.5f;
   [SerializeField] public float maxTimeBetweenBullets = 2f;
 
-  private float timeOfLastBullet = 0f;
-  private float timeBetweenBullets;
-  public int hp;
+  [SerializeField] public float timeOfNextBullet;
 
   void Start() {
-    timeBetweenBullets = Random.Range(minTimeBetweenBullets, maxTimeBetweenBullets);
-    hp = startingHealth;
+    GetComponent<Rigidbody2D>().velocity = new Vector3(0, speed, 0);
+
+    timeOfNextBullet = Time.time + Random.Range(0, maxTimeBetweenBullets);
   }
 
   void Update() {
-    transform.Translate(0, -5 * Time.deltaTime, 0);
-
-    if (Time.time - timeOfLastBullet > timeBetweenBullets) {
+    if (Time.time > timeOfNextBullet) {
       shoot();
-      timeOfLastBullet = Time.time;
+      UpdateNextBulletTime();
     }
+  }
+
+  private void UpdateNextBulletTime() {
+    timeOfNextBullet = Time.time + Random.Range(minTimeBetweenBullets, maxTimeBetweenBullets);
   }
 
   public void Damage(int damage) {
