@@ -126,6 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 25
   hp: 1
+  isPlayerBullet: 1
 --- !u!50 &-3013415967133279787
 Rigidbody2D:
   serializedVersion: 4

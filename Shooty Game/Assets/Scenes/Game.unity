@@ -654,16 +654,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Spawner
       objectReference: {fileID: 0}
-    - target: {fileID: 8946936514064872365, guid: 81d08b64c4fc6164a925d15ba524d780,
-        type: 3}
-      propertyPath: enemiesPerWave
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 8946936514064872365, guid: 81d08b64c4fc6164a925d15ba524d780,
-        type: 3}
-      propertyPath: timeBetweenWaves
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8946936514064872366, guid: 81d08b64c4fc6164a925d15ba524d780,
         type: 3}
       propertyPath: m_RootOrder
