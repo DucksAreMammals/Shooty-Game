@@ -72,7 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -110,12 +110,12 @@ PrefabInstance:
     - target: {fileID: 346712103262327846, guid: 23159c7fd5f26e635b5df809b5d62daf,
         type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 346712103262327846, guid: 23159c7fd5f26e635b5df809b5d62daf,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 346712103262327846, guid: 23159c7fd5f26e635b5df809b5d62daf,
         type: 3}
@@ -190,12 +190,12 @@ PrefabInstance:
     - target: {fileID: 346712103262327846, guid: 23159c7fd5f26e635b5df809b5d62daf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 236.53851
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 346712103262327846, guid: 23159c7fd5f26e635b5df809b5d62daf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 246.5
+      value: 225.09
       objectReference: {fileID: 0}
     - target: {fileID: 346712103262327846, guid: 23159c7fd5f26e635b5df809b5d62daf,
         type: 3}
@@ -212,6 +212,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 346712103262327847, guid: 23159c7fd5f26e635b5df809b5d62daf,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 346712103262327847, guid: 23159c7fd5f26e635b5df809b5d62daf,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b370baefb9cee2aedb54a6027775aed3,
+        type: 2}
+    - target: {fileID: 346712103262327847, guid: 23159c7fd5f26e635b5df809b5d62daf,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 346712103262327847, guid: 23159c7fd5f26e635b5df809b5d62daf,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3008252608039657861, guid: b370baefb9cee2aedb54a6027775aed3,
+        type: 2}
     - target: {fileID: 346712103262327897, guid: 23159c7fd5f26e635b5df809b5d62daf,
         type: 3}
       propertyPath: m_Name
