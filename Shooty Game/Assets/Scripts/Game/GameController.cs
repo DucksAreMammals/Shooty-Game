@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+  [SerializeField] public float waitTimeEndGame = 3f;
+
   private ScoreCounter scoreCounter;
   private GameObject[] enemies;
 
@@ -31,10 +34,17 @@ public class GameController : MonoBehaviour
   private void Win() {
     GameObject gameOver = GameObject.Find("Canvas/GameOver");
     gameOver.GetComponent<TextMeshProUGUI>().text = "You Win!";
+    StartCoroutine(EndGame());
   }
 
   public void GameOver() {
     GameObject gameOver = GameObject.Find("Canvas/GameOver");
     gameOver.GetComponent<TextMeshProUGUI>().text = "You Died";
+    StartCoroutine(EndGame());
+  }
+
+  private IEnumerator EndGame() {
+    yield return new WaitForSeconds(waitTimeEndGame);
+    SceneManager.LoadScene("Main Menu");
   }
 }
