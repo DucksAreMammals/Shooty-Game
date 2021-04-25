@@ -65,6 +65,8 @@ public class Player : MonoBehaviour
 
   public void Die() {
     Destroy(gameObject);
+    GameController controller = GameObject.Find("GameController").GetComponent<GameController>();
+    controller.GameOver();
   }
 
   private bool canShoot() {
