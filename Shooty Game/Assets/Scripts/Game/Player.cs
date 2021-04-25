@@ -42,13 +42,17 @@ public class Player : MonoBehaviour
     }
   }
 
+  // This is only for colliding with enemies.
+  // Bullet collisions are handled in the bullet script.
   void OnTriggerEnter2D(Collider2D other) {
-    Enemy enemy = other.gameObject.GetComponent<Enemy>();
+    if (other.gameObject.tag == "Enemy") {
+      Enemy enemy = other.gameObject.GetComponent<Enemy>();
 
-    int enemyHp = enemy.hp;
+      int enemyHp = enemy.hp;
 
-    enemy.Damage(hp);
-    Damage(enemyHp);
+      enemy.Damage(hp);
+      Damage(enemyHp);
+    }
   }
 
   public void Damage(int damage) {

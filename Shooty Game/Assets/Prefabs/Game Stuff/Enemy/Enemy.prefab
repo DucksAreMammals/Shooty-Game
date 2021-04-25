@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b76cb8f3e79134ba36bd58820b622e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 0
+  hp: 1
   score: 1
   bulletSpawnOffsetY: -1
   speed: -3
@@ -153,3 +153,4 @@ MonoBehaviour:
   minTimeBetweenBullets: 0.5
   maxTimeBetweenBullets: 2
   timeOfNextBullet: 0
+  yPosStartShooting: 5

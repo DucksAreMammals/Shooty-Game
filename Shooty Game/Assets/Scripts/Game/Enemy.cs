@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
   [SerializeField] public float maxTimeBetweenBullets = 2f;
 
   [SerializeField] public float timeOfNextBullet;
+  [SerializeField] public float yPosStartShooting = 5f;
 
   void Start() {
     GetComponent<Rigidbody2D>().velocity = new Vector3(0, speed, 0);
@@ -22,7 +23,7 @@ public class Enemy : MonoBehaviour
   }
 
   void Update() {
-    if (Time.time > timeOfNextBullet) {
+    if (Time.time > timeOfNextBullet && transform.position.y < yPosStartShooting) {
       shoot();
       UpdateNextBulletTime();
     }
@@ -41,7 +42,7 @@ public class Enemy : MonoBehaviour
   }
 
   private void Die() {
-    GameObject.Find("ScoreCounter").GetComponent<ScoreCounter>().AddPoints(score);
+    GameObject.Find("GameController").GetComponent<GameController>().AddPoints(score);
 
     Destroy(gameObject);
   }
