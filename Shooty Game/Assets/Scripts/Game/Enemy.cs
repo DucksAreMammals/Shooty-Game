@@ -42,8 +42,7 @@ public class Enemy : MonoBehaviour
   }
 
   private void Die() {
-    GameObject.Find("GameController").GetComponent<GameController>().AddPoints(score);
-
+    GameObject.Find("GameController").GetComponent<GameController>().EnemyDie(score);
     Destroy(gameObject);
   }
 
