@@ -12,4 +12,12 @@ public class Buttons : MonoBehaviour
   public void Play() {
     SceneManager.LoadScene("Game");
   }
+
+  public void Attribution() {
+    SceneManager.LoadScene("Attribution");
+  }
+
+  public void MainMenu() {
+    SceneManager.LoadScene("Main Menu");
+  }
 }

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: subatomic
+  m_Name: subatomic SDF
   m_EditorClassIdentifier: 
-  hashCode: 1051456889
+  hashCode: -163824120
   material: {fileID: 3269240567639278207}
-  materialHashCode: 892578617
+  materialHashCode: -1797067608
   m_Version: 1.1.0
   m_SourceFontFileGUID: b9fac7c10121d3e078c2d4e81ff67f2a
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: b9fac7c10121d3e078c2d4e81ff67f2a,
