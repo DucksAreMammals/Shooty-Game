@@ -147,3 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: -10
   hp: 1
+  isPlayerBullet: 0
+  bulletParticles: {fileID: 5981240569277931197, guid: d046d3b60593ac18a8997be7635faa57,
+    type: 3}
+  particleYOffset: -0.2

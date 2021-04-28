@@ -7,9 +7,21 @@ public class Bullet : MonoBehaviour
   [SerializeField] public float bulletSpeed = 10f;
   [SerializeField] public int hp = 1;
   [SerializeField] public bool isPlayerBullet = false;
+  [SerializeField] public GameObject bulletParticles;
+  [SerializeField] public float particleYOffset = 0.3f;
+
+  private GameObject particles;
+
+  void Start() {
+    particles = Instantiate(bulletParticles, transform.position, Quaternion.identity);
+    if (isPlayerBullet) {
+      particles.transform.localEulerAngles = new Vector3(0, 0, 180);
+    }
+  }
 
   void Update() {
     GetComponent<Rigidbody2D>().velocity = new Vector3(0, bulletSpeed, 0);
+    particles.transform.position = new Vector3(transform.position.x, transform.position.y - particleYOffset, 0);
   }
 
   void OnTriggerEnter2D(Collider2D other) {
@@ -24,6 +36,7 @@ public class Bullet : MonoBehaviour
     // save if other == bullet
     //   or if other is enemy and I am an enemy bullet
     if (!(other.gameObject.tag == "Bullet" || (other.gameObject.tag == "Enemy" && !isPlayerBullet))) {
+      Destroy(particles);
       Destroy(gameObject);
     }
   }
