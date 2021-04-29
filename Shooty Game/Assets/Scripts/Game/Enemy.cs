@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
   [SerializeField] public float minTimeBetweenBullets = 0.5f;
   [SerializeField] public float maxTimeBetweenBullets = 2f;
 
-  [SerializeField] public float timeOfNextBullet;
+  private float timeOfNextBullet;
   [SerializeField] public float yPosStartShooting = 5f;
 
   void Start() {
@@ -47,7 +47,7 @@ public class Enemy : MonoBehaviour
   }
 
   void shoot() {
-    Vector3 pos = new Vector3(transform.position.x, transform.position.y + bulletSpawnOffsetY, transform.position.z);
+    Vector3 pos = new Vector3(transform.position.x, transform.position.y + bulletSpawnOffsetY, transform.position.z + 1);
 
     Instantiate(bullet, pos, Quaternion.identity);
   }

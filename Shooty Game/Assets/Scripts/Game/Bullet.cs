@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
 
   void Update() {
     GetComponent<Rigidbody2D>().velocity = new Vector3(0, bulletSpeed, 0);
-    particles.transform.position = new Vector3(transform.position.x, transform.position.y - particleYOffset, 0);
+    particles.transform.position = new Vector3(transform.position.x, transform.position.y - particleYOffset, transform.position.z);
   }
 
   void OnTriggerEnter2D(Collider2D other) {
