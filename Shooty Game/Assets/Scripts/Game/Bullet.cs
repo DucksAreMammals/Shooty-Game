@@ -10,6 +10,9 @@ public class Bullet : MonoBehaviour
   [SerializeField] public GameObject bulletParticles;
   [SerializeField] public float particleYOffset = 0.3f;
 
+  [SerializeField] public GameObject breakParticles;
+  [SerializeField] public float breakParticleYOffset = 0.3f;
+
   private GameObject particles;
 
   void Start() {
@@ -36,6 +39,11 @@ public class Bullet : MonoBehaviour
     // save if other == bullet
     //   or if other is enemy and I am an enemy bullet
     if (!(other.gameObject.tag == "Bullet" || (other.gameObject.tag == "Enemy" && !isPlayerBullet))) {
+      if (breakParticles != null) {
+        Vector3 pos = new Vector3(transform.position.x, transform.position.y + breakParticleYOffset, transform.position.z);
+        GameObject objectBreakParticles = Instantiate(breakParticles, pos, Quaternion.identity);
+        Destroy(objectBreakParticles, 3);
+      }
       Destroy(particles);
       Destroy(gameObject);
     }

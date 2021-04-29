@@ -130,6 +130,8 @@ MonoBehaviour:
   bulletParticles: {fileID: 5981240569277931197, guid: b458a19de12106e6b83eeabdf295c663,
     type: 3}
   particleYOffset: 0.5
+  breakParticles: {fileID: 0}
+  breakParticleYOffset: -0.5
 --- !u!50 &-3013415967133279787
 Rigidbody2D:
   serializedVersion: 4
